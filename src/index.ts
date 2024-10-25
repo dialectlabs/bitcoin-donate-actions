@@ -117,7 +117,7 @@ app.post('/:network/donate/:recipient/:amount?', async (c) => {
       network,
       account,
       recipient,
-      parsedAmount * SATOSHI_PER_BTC,
+      Math.floor(parsedAmount * SATOSHI_PER_BTC),
     );
     const response: ActionPostResponse = {
       type: 'transaction',
