@@ -1,0 +1,26 @@
+{
+  "name": "bitcoin-transfer-actions",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@solana/actions": "^1.6.5",
+    "hono": "^4.6.6",
+    "bs58": "^5.0.0",
+    "tsx": "^4.19.1",
+    "bitcoinjs-lib": "^6.1.6",
+    "ecpair": "^2.1.0",
+    "tiny-secp256k1": "^2.2.3",
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240620.0",
+    "wrangler": "^3.57.2",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.1.0"
+  }
+}

@@ -1,0 +1,9 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "bitcoin-transfer-actions"
+main = "src/index.ts"
+compatibility_flags = ["nodejs_compat"]
+compatibility_date = "2024-09-23"
+
+routes = [
+    { pattern = "bitcoin.dial.to", custom_domain = true }
+]
